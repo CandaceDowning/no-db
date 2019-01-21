@@ -1,32 +1,111 @@
-.App {
-  text-align: center;
+body{
+  background-color: rgb(0, 194, 194)
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+button{
+  border-color: transparent;
+  box-shadow: 8px 8px 5px gray;
+  border-radius: 3px
+}
+button:hover{
+  border-color: black;
+  border-width: 3px;
+  box-shadow: 10px 10px 10px gray;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.colorButtBar{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  height: 20vh;
+  margin: 5vh 5vw
+}
+.colorButt{
+  width: 80px;
+  height: 80px;
+}
+.colorButt:active{
+  transform: rotate(-45deg);
+}
+.redButt{
+  background-color: rgb(243, 61, 61);
+}
+.orangeButt{
+  background-color: rgb(252, 177, 38);
+}
+.yellowButt{
+  background-color: yellow;
+}
+.greenButt{
+  background-color: lightgreen;
+}
+.blueButt{
+  background-color: rgb(39, 159, 199);
+}
+.purpleButt{
+  background-color: violet;
+}
+
+.imageFav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30vh;
+  margin: 20vh 20vw
+}
+.image{
+  min-height: 60vh;
+  max-height: 60vh;
+  max-width: 80vw
+}
+.imageBox{
+  margin-left: auto;
+  margin-right: auto;
+  border-color: black;
+  border-width: 3px
+}
+.favButt{
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  right: 10vw;
+  background-image: repeating-radial-gradient(
+    rgb(243, 61, 61),
+    rgb(243, 61, 61) 2%,
+    yellow 20%,
+    lightgreen 30%,
+    rgb(39, 159, 199)55%,
+    violet);  
+}
+.favButt:active{
+  transform: rotate(-45deg);
+}
+.navButt{
+  background-image: linear-gradient(to right,rgb(243, 61, 61)1%,rgb(243, 61, 61)2%,yellow 20%,lightgreen 70%, rgb(39, 159, 199),violet);  
+  width: 100vw;
+  height: 5vh;
+  position: fixed;
+  bottom: 0;
+  letter-spacing: 3px;
+  font-size: 23px;  
+  font-family: 'courier';
+  font-weight: 700;
+  color:rgb(36, 143, 179);
+}
+
+.galleryImages{
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  margin: 10px;
+  image-resolution: 150dpi;
+}
+
+.galleryContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  align-items: center;
+  align-content: stretch;
 }
