@@ -1,8 +1,7 @@
 const axios = require("axios")
 let base = "https://api.unsplash.com/search/photos/?query="
 
-let access = "&client_id=cabbb571092194a8bebee673907d8639975253635ffd885f0b78c227edd0c374"
-
+let access = "&client_id= ///Key removed
 let favoritesArray= []
 
 
